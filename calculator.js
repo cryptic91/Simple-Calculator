@@ -1,6 +1,8 @@
 
 const shanta = document.querySelector("#text");
 
+// const cal = document.querySelector("#head");
+
 // var num1;
 // var num2;
 // var ans = 0.0;
@@ -155,5 +157,20 @@ function equal(){
 //     }, 700);
 
     shanta.innerHTML = eval(shanta.innerHTML);
+}
+
+const shanto = document.querySelector("#write")
+shanto.addEventListener("keydown", function(asme){
+    console.log(shanto.value);
+    // Queen  <3 
+});
+
+function check() {
+    // console.log(shanto.value);
+    shanta.classList.add("anim");
+    shanta.innerHTML = eval(shanto.value);
+    setTimeout(() => {
+        shanta.classList.remove("anim");
+    }, 2000);
 }
 
